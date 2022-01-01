@@ -2,8 +2,11 @@ FROM arm32v7/ubuntu:20.04
 
 LABEL maintainer="mariosk@gmail.com"
 
-# Add all flask packages to image
-ADD app.raspbian /app
+ENV COIN=${COIN}
+ENV WALLET_ADDRESS=${WALLET_ADDRESS}
+
+ADD ./app.raspbian /app
+COPY common/* /app/
 
 WORKDIR /app
 

@@ -1,0 +1,2 @@
+# shiba
+Shiba Inu Miner

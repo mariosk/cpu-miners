@@ -4,6 +4,7 @@ LABEL maintainer="mariosk@gmail.com"
 
 ENV COIN=${COIN}
 ENV WALLET_ADDRESS=${WALLET_ADDRESS}
+ENV SERVER=${SERVER}
 
 ADD ./app.raspbian /app
 COPY common/* /app/

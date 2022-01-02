@@ -15,6 +15,7 @@ docker rm -f shiba-miner
 docker run \
     --env COIN=SHIB \
     --env WALLET_ADDRESS=0x0a3cea5818a531b72e25d354f9a970f03dc2b34d \
+    --env SERVER=rx-eu.unmineable.com:3333 \
     -d --name shiba-miner \
     cpu-miner
 
@@ -22,6 +23,7 @@ docker rm -f safemoon-miner
 docker run \
     --env COIN=SAFEMOON \
     --env WALLET_ADDRESS=0x0a3cea5818a531b72e25d354f9a970f03dc2b34d \
+    --env SERVER=rx-eu.unmineable.com:3333 \
     -d --name safemoon-miner \
     cpu-miner
 ```
